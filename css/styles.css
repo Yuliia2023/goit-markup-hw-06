@@ -409,7 +409,13 @@ textarea {
   color: #4d5ae5;
   margin-top: 16px;
 }
-.form-check {
+.check-label {
+  display: block;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+}
+.check-input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -424,6 +430,7 @@ textarea {
 }
 
 .checkbox-icon {
+  display: inline-block;
   margin-top: 16px;
   margin-right: 8px;
   border: 1px solid #2e2f42;
@@ -433,12 +440,10 @@ textarea {
   background-position: center;
   background-size: contain;
 }
-.form-check:checked + .checkbox-icon {
+.check-input:checked + .checkbox-icon {
   background: #404bbf;
 }
-/* .form-check-desc:checked + .checkbox-icon {
-  background: #404bbf;
-} */
+
 /* -------------- */
 .form-btn {
   padding-bottom: 24px;
